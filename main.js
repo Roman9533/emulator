@@ -25,7 +25,16 @@
                 alert(`Вы сняли ${withdrawAmount}₽. Новый баланс: ${balance}₽`);
             }
             break;
-                
+
+            case "3":
+                const depositAmount = Number(prompt("Введите сумму для пополнения!"));
+                if (isNaN(depositAmount) || depositAmount <= 0) {
+                    alert("Ошибка: введите корректную сумму!");
+                }else {
+                    balance += depositAmount;
+                    alert(`Вы пополнили счет на ${depositAmount}₽. Новый баланс: ${balance}₽`);
+                }
+                break;
                 
                     
         }
