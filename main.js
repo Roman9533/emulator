@@ -35,9 +35,17 @@
                     alert(`Вы пополнили счет на ${depositAmount}₽. Новый баланс: ${balance}₽`);
                 }
                 break;
+            
+                case "4":
+                    alert("Спасибо, что  пользовались банкоматом!");
+                    break;
+
                 
-                    
+                    default:
+                        alert("Неверный выбор,попробуйте снова.");
+                        continue;
         }
 
+        if (choice === "4") break;
         }
 
